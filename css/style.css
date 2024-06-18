@@ -327,3 +327,38 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+.logo {
+    width: 120px;
+}
+.text_bg {
+    font-family: "Thasadith", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg_bg {
+    background-size: cover !important;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top : 0;
+}
+.bg_1 {
+    background: url('/TinhNguyenLinhPhong/img/bg-1.jpg');
+}
+.bg_2 {
+    background: url('/TinhNguyenLinhPhong/img/bg_2.jpg');
+}
+.bg_3 {
+    background: url('/TinhNguyenLinhPhong/img/bg_3.jpg');
+}
+.bg_4 {
+    background: url('/TinhNguyenLinhPhong/img/bg_4.jpg');
+}
+.bg_5 {
+    background: url('/TinhNguyenLinhPhong/img/bg_5.jpg');
+}
+.bg_6 {
+    background: url('/TinhNguyenLinhPhong/img/bg_6.jpg');
+}
