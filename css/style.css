@@ -362,3 +362,6 @@
 .bg_6 {
     background: url('/img/bg_6.jpg');
 }
+.bg_fx {
+    max-height: 240px;
+}
