@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <title>Tĩnh Nguyên Linh Phong</title>
+    <title>Tên miền đã hết hạn - Tĩnh Nguyên Linh Phong</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta
+      content="domain expired, tên miền hết hạn, gia hạn, thanh toán"
+      name="keywords"
+    />
+    <meta
+      content="Tên miền đã hết hạn. Vui lòng thanh toán để tiếp tục dịch vụ."
+      name="description"
+    />
 
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon" />
@@ -17,12 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+
     <!-- Icon Font Stylesheet -->
     <link
       rel="stylesheet"
@@ -38,641 +39,192 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: 'Nunito', sans-serif;
+      }
+      .expired-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .expired-card {
+        max-width: 800px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      }
+      .expired-header {
+        background-color: #212529;
+        padding: 25px;
+        position: relative;
+      }
+      .expired-logo {
+        width: 80px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .expired-title {
+        color: #f9e92f;
+        font-weight: 800;
+        margin-bottom: 0;
+      }
+      .expired-subtitle {
+        color: #ffffff;
+        font-weight: 300;
+      }
+      .expired-body {
+        background-color: #ffffff;
+        padding: 40px 30px;
+      }
+      .expired-icon {
+        font-size: 3.5rem;
+        color: #dc3545;
+        margin-bottom: 20px;
+      }
+      .btn-renew {
+        background-color: #f9e92f;
+        color: #212529;
+        font-weight: 700;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s;
+      }
+      .btn-renew:hover {
+        background-color: #212529;
+        color: #f9e92f;
+      }
+      .expired-footer {
+        background-color: #f8f9fa;
+        padding: 20px 30px;
+        border-top: 1px solid #dee2e6;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #212529;
+        color: #f9e92f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+      }
+      .payment-info {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        border-left: 4px solid #f9e92f;
+      }
+      .payment-title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #212529;
+      }
+      .payment-detail {
+        margin-bottom: 5px;
+      }
+      .countdown {
+        background-color: #dc3545;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: 700;
+        margin: 20px 0;
+        display: inline-block;
+      }
+      .warning-text {
+        color: #dc3545;
+        font-weight: 600;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-grow text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <img class="logo" src="img/logo.png" alt="Image" />
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
-          <a
-            href="https://www.facebook.com/permalink.php?story_fbid=pfbid02EWxWc2pR43pkG94PwbrWHwY7xDKqHKwy5qcmFSja6iei7ceQ29nTr79v8ZNcayHal&id=61560839484889"
-            class="nav-item nav-link"
-            >Hướng Dẫn Đặt Lịch</a
-          >
-          <a
-            href="https://forms.gle/MnzMkBcgqmfQ2A5e8"
-            class="nav-item nav-link"
-            >Dịch vụ sớ Tết Âm Lịch</a
-          >
-          <a
-            href="https://forms.gle/qWeMhZw91ca14Auo9"
-            class="nav-item nav-link"
-            >Dịch vụ đổi tiền lì xì
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61560839484889"
-            class="nav-item nav-link"
-            >Liên Hệ</a
-          >
-          <a
-            href="https://drive.google.com/drive/folders/1JR4aeSXv18QkvLVaxPng57uXxefClmeA"
-            class="nav-item nav-link"
-            >Tài liệu chia sẻ</a
-          >
-        </div>
-        <a
-          href="https://www.facebook.com/profile.php?id=61560839484889&mibextid=LQQJ4d&locale=vi_VN"
-          class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
-          >Đặt lịch ngay<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-      <div
-        id="header-carousel"
-        class="carousel slide text_bg"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 600px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  TĨNH NGUYÊN BẢO SỞ
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  01- TRƯƠNG ĐỊNH, HÀ NỘI
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
+    <div class="expired-container container py-5">
+      <div class="expired-card wow fadeIn" data-wow-delay="0.1s">
+        <div class="expired-body text-center">
+          <div class="expired-icon">
+            <i class="fas fa-exclamation-triangle"></i>
           </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  Cơ sở tín ngưỡng phụng sự thánh mẫu TAM TỨ PHỦ.
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  02- TỨ KỲ, HẢI DƯƠNG
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-3.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  Thủ nhang TỪ MINH
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  01- TỨ KỲ, HẢI DƯƠNG
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-4.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  TĨNH NGUYÊN BẢO SỞ
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  02- TRƯƠNG ĐỊNH, HÀ NỘI
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-5.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  Cơ sở tín ngưỡng phụng sự thánh mẫu TAM TỨ PHỦ.
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  01- TỨ KỲ, HẢI DƯƠNG
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div class="d-flex flex-column">
-              <img
-                class="img-fluid w-75 align-self-end"
-                src="img/about-1.jpg"
-                alt=""
-              />
-              <div class="w-50 bg-secondary p-5" style="margin-top: -25%">
-                <p class="text-uppercase text-primary mb-3">
-                  Thanh đồng Mai Văn Bình đạo hiệu Từ Minh
-                </p>
-                <p class="text-uppercase mb-0">thủ nhang Tĩnh Nguyên Bảo Sở</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <p class="d-inline-block bg-secondary text-primary py-1 px-4">
-              Cậu Bình 18T
-            </p>
-            <h1 class="text-uppercase mb-4">
-              Người trẻ làm việc tâm linh thế kỉ 21!
-            </h1>
-            <p>Uy tín</p>
-            <p class="mb-4">Trách Nhiệm</p>
-            <p class="mb-4">Nhiệt Tình</p>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <h3 class="text-uppercase mb-3">Bắt đầu 2016</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <p class="d-inline-block bg-secondary text-primary py-1 px-4">
-            Dịch Vụ
+          <div class="mb-4">Tên miền đã hết hạn</div>
+          <p class="mb-4 fs-5">
+            Tên miền của bạn đã hết hạn vào ngày <strong>01/09/2025</strong>.
           </p>
-          <h1 class="text-uppercase">Cậu Bình Cung Cấp Dịch Vụ</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_2"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  Tư Vấn Tâm Linh Các Ngày Trong Tuần (T2-T6)
-                </h3>
-
-                <p>
-                  - Tư vấn tâm linh bằng hình thức đa dạng - trầu cau, bài tây,
-                  chân gà....
-                </p>
-                <p>
-                  - Luận giải định hướng bằng bộ môn tử vi, nhân tướng khi quý
-                  vị có yêu cầu.
-                </p>
-                <p>- Tư vấn phẫu thuật thẩm mỹ theo nhân tướng</p>
-                <p>
-                  - Hỗ trợ xem ngày giờ tháng năm đẹp để làm các công việc xây
-                  nhà, khai trương, mở văn phòng
-                </p>
-                <p>
-                  - Tư vấn các bộ môn phong thủy về bất động sản doanh nghiệp,
-                  dương cơ và âm trạch.
-                </p>
-
-                <span class="text-uppercase text-primary">Từ 200.000VNĐ</span>
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item position-relative overflow-hidden d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_1"></div>
-              <!-- <div
-                class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
-                style="width: 60px; height: 60px"
-              >
-                <img class="img-fluid" src="img/icon-3.jpg" alt="" />
-              </div> -->
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  TƯ VẤN TÂM LINH CÁC KHUNG GIỜ ĐẶC BIỆT (T7 - CN - NGÀY LỄ) +
-                  ONLINE ZALO
-                </h3>
-                <p>Các hình thức tự chọn vào các khung giờ đặc biệt.</p>
-                <p>
-                  Hỗ trợ các cung giờ đặc biệt buổi tối, ngày nghỉ, 60 phút 1
-                  lịch gặp.
-                </p>
-                <p>20:00 - 22:00</p>
-                <span class="text-uppercase text-primary">Từ 500.000VNĐ</span>
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_3"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  DỊCH VỤ TỔ CHỨC CÁC SỰ KIỆN TÂM LINH
-                </h3>
-
-                <p>
-                  - Cúng bái sự kiện tiểu duyên: khai trương cửa hàng, bốc bát
-                  hương, làm ban thần tài, nhận trạch nhà mới, tạ đất tạ
-                  mộ.......
-                </p>
-                <p>
-                  - Cúng bái các sự kiện đại đàn - phả độ gia tiên, khai cung
-                  tài lộc, cầu con, cầu an, tam phủ thục mệnh, giải phù
-                  chú...(tùy gia chủ)
-                </p>
-                <span class="text-uppercase text-primary"
-                  >( PHÍ DỊCH VỤ 3.000.000 + DI CHUYỂN)</span
-                >
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_4"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">SOI CĂN NỐI QUẢ</h3>
-
-                <p>
-                  - Tư vấn căn số, trình đồng mở phủ, trả nợ tứ phủ, khấn
-                  căn........
-                </p>
-                <p>
-                  - Đào tạo định hướng các khoa nghi pháp, phong thủy sự cơ
-                  bản....
-                </p>
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_5"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  CUNG CẤP KINH SÁCH TÀI LIỆU THEO YÊU CẦU
-                </h3>
-
-                <p>
-                  - Nhận dịch thuật Hán Nôm, làm các file sách Hán Nôm, design
-                  tài liệu theo yêu cầu
-                </p>
-                <p>- Dịch thuật tài liệu văn bản Hán Nôm cổ</p>
-                <p>- Tạo file theo yêu cầu</p>
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_6"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">SETUP NƠI THỜ</h3>
-
-                <p>- Thiết kế, setup nơi thờ gia tiên, điện thờ tại tư gia</p>
-                <p>- Hỗ trợ cung cấp đồ thờ phù hợp từng yêu cầu</p>
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Working Hours Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-0">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div class="h-100">
-              <img class="img-fluid h-100 bg_fx" src="img/open-2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div
-              class="bg-secondary h-100 d-flex flex-column justify-content-center p-5"
-            >
-              <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">
-                Giờ Làm Việc
-              </p>
-
-              <div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 2</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 3</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 4</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 5</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 6</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <!-- <div class="d-flex justify-content-between py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 7</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Working Hours End -->
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <p class="d-inline-block bg-secondary text-primary py-1 px-4">
-            Phản Hồi
+          <p class="mb-4">
+            Để tiếp tục duy trì hoạt động của website và các dịch vụ liên quan,
+            vui lòng thanh toán phí gia hạn.
           </p>
-          <h1 class="text-uppercase">Một Số Phản Hồi!</h1>
-        </div>
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div
-            class="testimonial-item text-center"
-            data-dot="<img class='img-fluid' src='img/fb-1.png' alt=''>"
-          >
-            <h4 class="text-uppercase">Anh Thư</h4>
-            <p class="text-primary">Người dùng Tiktok</p>
-            <span class="fs-5"
-              >Con xem mà ưng quá chừng, nhẹ nhàng tư vấn đúng đủ không chèo kéo
-              doạ nạt gì, mn nếu có nhu cầu tâm linh thì tìm gặp cậu Bình là
-              chân ái ròi🥰</span
-            >
+
+          <div class="countdown">
+            Thời gian còn lại để khôi phục:
+            <span id="countdown">3 ngày 12 giờ</span>
           </div>
-          <div
-            class="testimonial-item text-center"
-            data-dot="<img class='img-fluid' src='img/fb-1.png' alt=''>"
-          >
-            <h4 class="text-uppercase">Viet Duc</h4>
-            <p class="text-primary">Người dùng Tiktok</p>
-            <span class="fs-5"
-              >Vừa xem cậu sáng nay xong, cậu nhiệt tình, đon đả. Đồ ăn thức
-              uống thì đầy trên bàn để tiếp khách. Cậu xem những điều tương lai
-              thì chưa biết thế nào, nhưng những đã diễn ra thì rất đúng
-              😳</span
-            >
-          </div>
-          <div
-            class="testimonial-item text-center"
-            data-dot="<img class='img-fluid' src='img/fb-1.png' alt=''>"
-          >
-            <h4 class="text-uppercase">trang</h4>
-            <p class="text-primary">Người dùng Tiktok</p>
-            <span class="fs-5"
-              >Lần đầu tiên gặp cậu Bình, cậu nói đến đâu gật lia lịa đến đó. 10
-              điểm không có nhưng</span
-            >
-          </div>
+
+          <p class="warning-text mb-4">
+            Sau thời gian này, tên miền có thể sẽ bị mất và người khác có thể
+            đăng ký!
+          </p>
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
-
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-4 col-md-6">
-            <h4 class="text-uppercase mb-4">Thông tin liên hệ</h4>
-            <div class="d-flex align-items-center mb-2">
-              <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-map-marker-alt text-primary"></span>
-              </div>
-              <span>Phố Nguyễn An Ninh, Trương Định, Hà Nội</span>
-            </div>
-            <div class="d-flex align-items-center mb-2">
-              <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-phone-alt text-primary"></span>
-              </div>
-              <span>0392755954</span>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-envelope-open text-primary"></span>
-              </div>
-              <span>tinhnguyenlinhphong@gmail.com</span>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <!-- <h4 class="text-uppercase mb-4">Quick Links</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a> -->
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex pt-1 m-n1">
-              <a
-                class="btn btn-lg-square btn-dark text-primary m-1"
-                href="https://www.facebook.com/profile.php?id=61560839484889"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-lg-square btn-dark text-primary m-1"
-                href="https://www.tiktok.com/@tinhnguyenlinhphong"
-              >
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Tĩnh Nguyên Bảo Sở</a>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Thuộc sở hữu
-              <a
-                class="border-bottom"
-                href="https://www.facebook.com/profile.php?id=61560839484889"
-                >Mai Văn Bình</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- Countdown Script -->
+    <script>
+      // Initialize WOW.js
+      new WOW().init()
+
+      // Simple countdown (for demo purposes)
+      function updateCountdown() {
+        // Set the target date (3 days from current date)
+        const now = new Date()
+        const target = new Date(now)
+        target.setDate(target.getDate() + 3)
+        target.setHours(target.getHours() + 12)
+
+        // Calculate the time difference
+        const diff = target - now
+
+        // Calculate days, hours, minutes and seconds
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        )
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000)
+
+        // Update the countdown element
+        document.getElementById(
+          'countdown'
+        ).textContent = `${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây`
+
+        // Update every second
+        setTimeout(updateCountdown, 1000)
+      }
+
+      // Start the countdown when the page loads
+      window.onload = function () {
+        updateCountdown()
+      }
+    </script>
   </body>
 </html>
