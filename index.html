@@ -47,7 +47,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="home">
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -65,572 +65,459 @@
 
     <!-- Navbar Start -->
     <nav
-      class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+      class="navbar navbar-expand-lg navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <img class="logo" src="img/logo.png" alt="Image" />
+      <a href="#home" class="navbar-brand ms-4 ms-lg-0">
+        <img class="logo" src="img/logo.png" alt="Tĩnh Nguyên Bảo Sở" />
       </a>
       <button
         type="button"
         class="navbar-toggler me-4"
         data-bs-toggle="collapse"
         data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Mở menu"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+          <a href="#home" class="nav-item nav-link active">Trang chủ</a>
+          <a href="#about" class="nav-item nav-link">Giới thiệu</a>
+          <a href="#services" class="nav-item nav-link">Dịch vụ</a>
+          <a href="#gallery" class="nav-item nav-link">Hình ảnh</a>
+          <a href="#schedule" class="nav-item nav-link">Giờ làm việc</a>
+          <a href="#contact" class="nav-item nav-link">Liên hệ</a>
           <a
             href="https://www.facebook.com/permalink.php?story_fbid=pfbid02EWxWc2pR43pkG94PwbrWHwY7xDKqHKwy5qcmFSja6iei7ceQ29nTr79v8ZNcayHal&id=61560839484889"
             class="nav-item nav-link"
-            >Hướng Dẫn Đặt Lịch</a
+            >Hướng dẫn đặt lịch</a
           >
           <a
             href="https://forms.gle/MnzMkBcgqmfQ2A5e8"
             class="nav-item nav-link"
-            >Dịch vụ sớ Tết Âm Lịch</a
+            >Sớ Tết</a
           >
           <a
             href="https://forms.gle/qWeMhZw91ca14Auo9"
             class="nav-item nav-link"
-            >Dịch vụ đổi tiền lì xì
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61560839484889"
-            class="nav-item nav-link"
-            >Liên Hệ</a
+            >Đổi tiền lì xì</a
           >
           <a
             href="https://drive.google.com/drive/folders/1JR4aeSXv18QkvLVaxPng57uXxefClmeA"
             class="nav-item nav-link"
-            >Tài liệu chia sẻ</a
+            >Tài liệu</a
           >
         </div>
         <a
           href="https://www.facebook.com/profile.php?id=61560839484889&mibextid=LQQJ4d&locale=vi_VN"
-          class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
-          >Đặt lịch ngay<i class="fa fa-arrow-right ms-3"></i
+          class="btn btn-primary rounded-pill py-2 px-lg-4 d-none d-lg-inline-flex align-items-center"
+          >Facebook<i class="fa fa-arrow-right ms-3"></i
         ></a>
       </div>
     </nav>
     <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-      <div
-        id="header-carousel"
-        class="carousel slide text_bg"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 600px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  TĨNH NGUYÊN BẢO SỞ
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  01- TRƯƠNG ĐỊNH, HÀ NỘI
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
+    <!-- Hero Start -->
+    <header class="hero-section overflow-hidden">
+      <div class="hero-bg"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 g-5">
+          <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+            <p class="section-kicker">Tĩnh Nguyên Bảo Sở</p>
+            <h1 class="hero-title">
+              Không gian tín ngưỡng phụng sự Thánh Mẫu Tam Tứ Phủ
+            </h1>
+            <p class="hero-copy">
+              Thanh đồng Mai Văn Bình, đạo hiệu Từ Minh, đồng hành tư vấn tâm
+              linh, nghi lễ và định hướng phong thủy với tinh thần uy tín, trách
+              nhiệm và nhiệt tình.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary rounded-pill px-4 py-3"
+                href="https://fb.com/book/294663893739562/"
+              >
+                Đặt lịch tư vấn
+                <i class="fa fa-arrow-right ms-2"></i>
+              </a>
+              <a class="btn btn-outline-light rounded-pill px-4 py-3" href="#services">
+                Xem dịch vụ
+              </a>
+            </div>
+            <div class="hero-meta">
+              <span><i class="fa fa-map-marker-alt"></i> Trương Định, Hà Nội</span>
+              <span><i class="fa fa-phone-alt"></i> 0392755954</span>
             </div>
           </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  Cơ sở tín ngưỡng phụng sự thánh mẫu TAM TỨ PHỦ.
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  02- TỨ KỲ, HẢI DƯƠNG
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-3.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  Thủ nhang TỪ MINH
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  01- TỨ KỲ, HẢI DƯƠNG
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-4.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  TĨNH NGUYÊN BẢO SỞ
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  02- TRƯƠNG ĐỊNH, HÀ NỘI
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-5.jpg" alt="Image" />
-            <div
-              class="carousel-caption d-flex align-items-center justify-content-center text-start"
-            >
-              <div class="mx-sm-5 px-5" style="max-width: 900px">
-                <h1
-                  class="display-2 text-white text-uppercase mb-4 animated slideInDown"
-                >
-                  Cơ sở tín ngưỡng phụng sự thánh mẫu TAM TỨ PHỦ.
-                </h1>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-map-marker-alt text-primary me-3"></i>Cơ sở
-                  01- TỨ KỲ, HẢI DƯƠNG
-                </h4>
-                <h4 class="text-white text-uppercase mb-4 animated slideInDown">
-                  <i class="fa fa-phone-alt text-primary me-3"></i>0392755954
-                </h4>
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.3s">
+            <div class="hero-card">
+              <img
+                src="img/new/61365d90-08d5-47d1-b0f0-ebc84226b34e.jpg"
+                alt="Không gian Tĩnh Nguyên Bảo Sở"
+              />
+              <div class="hero-card-panel">
+                <span>Bắt đầu từ 2016</span>
+                <strong>Cậu Bình 18T</strong>
+                <small>Người trẻ làm việc tâm linh thế kỉ 21</small>
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-    <!-- Carousel End -->
+    </header>
+    <!-- Hero End -->
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <section id="about" class="section-pad about-section">
       <div class="container">
-        <div class="row g-5">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div class="d-flex flex-column">
+            <div class="image-stack">
               <img
-                class="img-fluid w-75 align-self-end"
+                class="image-stack-main"
                 src="img/about-1.jpg"
-                alt=""
+                alt="Thanh đồng Mai Văn Bình"
               />
-              <div class="w-50 bg-secondary p-5" style="margin-top: -25%">
-                <p class="text-uppercase text-primary mb-3">
-                  Thanh đồng Mai Văn Bình đạo hiệu Từ Minh
-                </p>
-                <p class="text-uppercase mb-0">thủ nhang Tĩnh Nguyên Bảo Sở</p>
-              </div>
+              <img
+                class="image-stack-float"
+                src="img/open-2.jpg"
+                alt="Không gian làm việc tại Tĩnh Nguyên"
+              />
             </div>
           </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <p class="d-inline-block bg-secondary text-primary py-1 px-4">
-              Cậu Bình 18T
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <p class="section-kicker">Giới thiệu</p>
+            <h2 class="section-title">
+              Giữ nghi lễ trang trọng, trình bày rõ ràng, đồng hành gần gũi.
+            </h2>
+            <p class="section-copy">
+              Tĩnh Nguyên Bảo Sở là nơi tiếp nhận tư vấn tâm linh, hỗ trợ nghi
+              lễ và chia sẻ tài liệu theo nhu cầu. Mỗi lịch hẹn được chuẩn bị
+              riêng để người đến có thời gian trình bày, lắng nghe và lựa chọn
+              hướng xử lý phù hợp.
             </p>
-            <h1 class="text-uppercase mb-4">
-              Người trẻ làm việc tâm linh thế kỉ 21!
-            </h1>
-            <p>Uy tín</p>
-            <p class="mb-4">Trách Nhiệm</p>
-            <p class="mb-4">Nhiệt Tình</p>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <h3 class="text-uppercase mb-3">Bắt đầu 2016</h3>
+            <div class="value-grid">
+              <div>
+                <span>01</span>
+                <strong>Uy tín</strong>
+                <p>Thông tin rõ ràng, tư vấn đúng trọng tâm.</p>
+              </div>
+              <div>
+                <span>02</span>
+                <strong>Trách nhiệm</strong>
+                <p>Chuẩn bị lịch hẹn và nghi lễ theo từng hoàn cảnh.</p>
+              </div>
+              <div>
+                <span>03</span>
+                <strong>Nhiệt tình</strong>
+                <p>Đồng hành với thái độ cởi mở, không chèo kéo.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- About End -->
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <section id="services" class="section-pad services-section">
       <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <p class="d-inline-block bg-secondary text-primary py-1 px-4">
-            Dịch Vụ
+        <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+          <p class="section-kicker">Dịch vụ</p>
+          <h2 class="section-title">Các hạng mục đang tiếp nhận</h2>
+          <p class="section-copy">
+            Chọn nhóm dịch vụ phù hợp và đặt lịch qua Facebook để được sắp xếp
+            khung giờ cụ thể.
           </p>
-          <h1 class="text-uppercase">Cậu Bình Cung Cấp Dịch Vụ</h1>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_2"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  Tư Vấn Tâm Linh Các Ngày Trong Tuần (T2-T6)
-                </h3>
-
+            <article class="service-card h-100">
+              <div class="service-card-bg bg_2"></div>
+              <div class="service-card-body">
+                <span class="service-tag">Từ 200.000VNĐ</span>
+                <h3>Tư vấn tâm linh trong tuần</h3>
                 <p>
-                  - Tư vấn tâm linh bằng hình thức đa dạng - trầu cau, bài tây,
-                  chân gà....
+                  Tư vấn bằng trầu cau, bài tây, chân gà; luận giải tử vi, nhân
+                  tướng, ngày giờ và phong thủy khi quý vị có nhu cầu.
                 </p>
-                <p>
-                  - Luận giải định hướng bằng bộ môn tử vi, nhân tướng khi quý
-                  vị có yêu cầu.
-                </p>
-                <p>- Tư vấn phẫu thuật thẩm mỹ theo nhân tướng</p>
-                <p>
-                  - Hỗ trợ xem ngày giờ tháng năm đẹp để làm các công việc xây
-                  nhà, khai trương, mở văn phòng
-                </p>
-                <p>
-                  - Tư vấn các bộ môn phong thủy về bất động sản doanh nghiệp,
-                  dương cơ và âm trạch.
-                </p>
-
-                <span class="text-uppercase text-primary">Từ 200.000VNĐ</span>
+                <a href="https://fb.com/book/294663893739562/">Đặt lịch</a>
               </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <article class="service-card h-100">
+              <div class="service-card-bg bg_1"></div>
+              <div class="service-card-body">
+                <span class="service-tag">Từ 500.000VNĐ</span>
+                <h3>Khung giờ đặc biệt và online</h3>
+                <p>
+                  Hỗ trợ lịch tối, cuối tuần, ngày lễ và tư vấn online Zalo.
+                  Mỗi lịch gặp được bố trí khoảng 60 phút.
+                </p>
+                <a href="https://fb.com/book/294663893739562/">Đặt lịch</a>
+              </div>
+            </article>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item position-relative overflow-hidden d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_1"></div>
-              <!-- <div
-                class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
-                style="width: 60px; height: 60px"
-              >
-                <img class="img-fluid" src="img/icon-3.jpg" alt="" />
-              </div> -->
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  TƯ VẤN TÂM LINH CÁC KHUNG GIỜ ĐẶC BIỆT (T7 - CN - NGÀY LỄ) +
-                  ONLINE ZALO
-                </h3>
-                <p>Các hình thức tự chọn vào các khung giờ đặc biệt.</p>
+            <article class="service-card h-100">
+              <div class="service-card-bg bg_3"></div>
+              <div class="service-card-body">
+                <span class="service-tag">Từ 3.000.000VNĐ</span>
+                <h3>Tổ chức sự kiện tâm linh</h3>
                 <p>
-                  Hỗ trợ các cung giờ đặc biệt buổi tối, ngày nghỉ, 60 phút 1
-                  lịch gặp.
+                  Hỗ trợ cúng bái tiểu duyên, nhận trạch, tạ đất, tạ mộ, phả độ
+                  gia tiên, cầu an, cầu con và các đại đàn tùy gia chủ.
                 </p>
-                <p>20:00 - 22:00</p>
-                <span class="text-uppercase text-primary">Từ 500.000VNĐ</span>
+                <a href="https://fb.com/book/294663893739562/">Đặt lịch</a>
               </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_3"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  DỊCH VỤ TỔ CHỨC CÁC SỰ KIỆN TÂM LINH
-                </h3>
-
-                <p>
-                  - Cúng bái sự kiện tiểu duyên: khai trương cửa hàng, bốc bát
-                  hương, làm ban thần tài, nhận trạch nhà mới, tạ đất tạ
-                  mộ.......
-                </p>
-                <p>
-                  - Cúng bái các sự kiện đại đàn - phả độ gia tiên, khai cung
-                  tài lộc, cầu con, cầu an, tam phủ thục mệnh, giải phù
-                  chú...(tùy gia chủ)
-                </p>
-                <span class="text-uppercase text-primary"
-                  >( PHÍ DỊCH VỤ 3.000.000 + DI CHUYỂN)</span
-                >
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
+            </article>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_4"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">SOI CĂN NỐI QUẢ</h3>
-
+            <article class="service-card h-100">
+              <div class="service-card-bg bg_4"></div>
+              <div class="service-card-body">
+                <span class="service-tag">Theo lịch hẹn</span>
+                <h3>Soi căn nối quả</h3>
                 <p>
-                  - Tư vấn căn số, trình đồng mở phủ, trả nợ tứ phủ, khấn
-                  căn........
+                  Tư vấn căn số, trình đồng mở phủ, trả nợ tứ phủ, khấn căn và
+                  định hướng khoa nghi, pháp sự, phong thủy cơ bản.
                 </p>
-                <p>
-                  - Đào tạo định hướng các khoa nghi pháp, phong thủy sự cơ
-                  bản....
-                </p>
+                <a href="https://fb.com/book/294663893739562/">Đặt lịch</a>
               </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <article class="service-card h-100">
+              <div class="service-card-bg bg_5"></div>
+              <div class="service-card-body">
+                <span class="service-tag">Theo yêu cầu</span>
+                <h3>Kinh sách và tài liệu</h3>
+                <p>
+                  Nhận dịch thuật Hán Nôm, làm file sách, thiết kế tài liệu và
+                  xử lý văn bản cổ theo nội dung quý vị cung cấp.
+                </p>
+                <a href="https://fb.com/book/294663893739562/">Đặt lịch</a>
+              </div>
+            </article>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_5"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">
-                  CUNG CẤP KINH SÁCH TÀI LIỆU THEO YÊU CẦU
-                </h3>
-
+            <article class="service-card h-100">
+              <div class="service-card-bg bg_6"></div>
+              <div class="service-card-body">
+                <span class="service-tag">Theo không gian</span>
+                <h3>Setup nơi thờ</h3>
                 <p>
-                  - Nhận dịch thuật Hán Nôm, làm các file sách Hán Nôm, design
-                  tài liệu theo yêu cầu
+                  Tư vấn thiết kế, setup nơi thờ gia tiên, điện thờ tại tư gia
+                  và hỗ trợ lựa chọn đồ thờ phù hợp.
                 </p>
-                <p>- Dịch thuật tài liệu văn bản Hán Nôm cổ</p>
-                <p>- Tạo file theo yêu cầu</p>
+                <a href="https://fb.com/book/294663893739562/">Đặt lịch</a>
               </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0"
-            >
-              <div class="bg_bg bg_6"></div>
-              <div class="ps-4 text-white">
-                <h3 class="text-uppercase mb-3">SETUP NƠI THỜ</h3>
-
-                <p>- Thiết kế, setup nơi thờ gia tiên, điện thờ tại tư gia</p>
-                <p>- Hỗ trợ cung cấp đồ thờ phù hợp từng yêu cầu</p>
-              </div>
-              <a
-                class="btn btn-square"
-                href="https://fb.com/book/294663893739562/"
-                ><i class="fa fa-plus text-primary"></i
-              ></a>
-            </div>
+            </article>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Service End -->
 
-    <!-- Working Hours Start -->
-    <div class="container-xxl py-5">
+    <!-- Gallery Start -->
+    <section id="gallery" class="section-pad gallery-section">
       <div class="container">
-        <div class="row g-0">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <div class="h-100">
-              <img class="img-fluid h-100 bg_fx" src="img/open-2.jpg" alt="" />
-            </div>
+        <div class="row g-4 align-items-end mb-4">
+          <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+            <p class="section-kicker">Trải nghiệm</p>
+            <h2 class="section-title">Một vài khoảnh khắc tại Tĩnh Nguyên</h2>
           </div>
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <div
-              class="bg-secondary h-100 d-flex flex-column justify-content-center p-5"
-            >
-              <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">
-                Giờ Làm Việc
-              </p>
+          <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.2s">
+            <p class="section-copy mb-0">
+              Ảnh được chọn để giữ nhịp trang thoáng, nhiều chiều sâu và giúp
+              người xem cảm nhận rõ hơn không gian nghi lễ.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item-large wow fadeIn" data-wow-delay="0.1s">
+            <img
+              src="img/new/b9ec0a8c-4d9c-41c5-a47d-7ccdb0b3033b.jpg"
+              alt="Không gian nghi lễ"
+            />
+            <figcaption>Không gian nghi lễ</figcaption>
+          </figure>
+          <figure class="gallery-item wow fadeIn" data-wow-delay="0.2s">
+            <img src="img/carousel-1.jpg" alt="Tĩnh Nguyên Bảo Sở" />
+            <figcaption>Tĩnh Nguyên Bảo Sở</figcaption>
+          </figure>
+          <figure class="gallery-item wow fadeIn" data-wow-delay="0.3s">
+            <img src="img/open-2.jpg" alt="Giờ làm việc" />
+            <figcaption>Tiếp lịch trong tuần</figcaption>
+          </figure>
+          <figure class="gallery-item wow fadeIn" data-wow-delay="0.4s">
+            <img src="img/about-1.jpg" alt="Thủ nhang Từ Minh" />
+            <figcaption>Thủ nhang Từ Minh</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery End -->
 
-              <div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 2</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 3</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 4</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 5</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 6</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div>
-                <!-- <div class="d-flex justify-content-between py-2">
-                  <h6 class="text-uppercase mb-0">Thứ 7</h6>
-                  <span class="text-uppercase">11:00 - 17:00</span>
-                </div> -->
+    <!-- Schedule Start -->
+    <section id="schedule" class="section-pad schedule-section">
+      <div class="container">
+        <div class="schedule-panel">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+              <img
+                class="schedule-image"
+                src="img/new/61365d90-08d5-47d1-b0f0-ebc84226b34e.jpg"
+                alt="Không gian đón khách"
+              />
+            </div>
+            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.2s">
+              <p class="section-kicker">Giờ làm việc</p>
+              <h2 class="section-title">Lịch tiếp khách trong tuần</h2>
+              <div class="schedule-list">
+                <div><span>Thứ 2</span><strong>11:00 - 17:00</strong></div>
+                <div><span>Thứ 3</span><strong>11:00 - 17:00</strong></div>
+                <div><span>Thứ 4</span><strong>11:00 - 17:00</strong></div>
+                <div><span>Thứ 5</span><strong>11:00 - 17:00</strong></div>
+                <div><span>Thứ 6</span><strong>11:00 - 17:00</strong></div>
               </div>
+              <p class="schedule-note">
+                Lịch tối, cuối tuần và ngày lễ được sắp xếp theo khung đặc biệt.
+                Vui lòng đặt trước để được xác nhận thời gian.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill px-4 py-3"
+                href="https://fb.com/book/294663893739562/"
+              >
+                Đặt lịch Facebook
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Working Hours End -->
+    </section>
+    <!-- Schedule End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <section class="section-pad testimonials-section">
       <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <p class="d-inline-block bg-secondary text-primary py-1 px-4">
-            Phản Hồi
-          </p>
-          <h1 class="text-uppercase">Một Số Phản Hồi!</h1>
+        <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+          <p class="section-kicker">Phản hồi</p>
+          <h2 class="section-title">Khách từng ghé Tĩnh Nguyên chia sẻ</h2>
         </div>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
           data-wow-delay="0.1s"
         >
           <div
-            class="testimonial-item text-center"
+            class="testimonial-item"
             data-dot="<img class='img-fluid' src='img/fb-1.png' alt=''>"
           >
-            <h4 class="text-uppercase">Anh Thư</h4>
-            <p class="text-primary">Người dùng Tiktok</p>
-            <span class="fs-5"
-              >Con xem mà ưng quá chừng, nhẹ nhàng tư vấn đúng đủ không chèo kéo
+            <p>
+              "Con xem mà ưng quá chừng, nhẹ nhàng tư vấn đúng đủ không chèo kéo
               doạ nạt gì, mn nếu có nhu cầu tâm linh thì tìm gặp cậu Bình là
-              chân ái ròi🥰</span
-            >
+              chân ái ròi."
+            </p>
+            <h4>Anh Thư</h4>
+            <span>Người dùng Tiktok</span>
           </div>
           <div
-            class="testimonial-item text-center"
+            class="testimonial-item"
             data-dot="<img class='img-fluid' src='img/fb-1.png' alt=''>"
           >
-            <h4 class="text-uppercase">Viet Duc</h4>
-            <p class="text-primary">Người dùng Tiktok</p>
-            <span class="fs-5"
-              >Vừa xem cậu sáng nay xong, cậu nhiệt tình, đon đả. Đồ ăn thức
-              uống thì đầy trên bàn để tiếp khách. Cậu xem những điều tương lai
-              thì chưa biết thế nào, nhưng những đã diễn ra thì rất đúng
-              😳</span
-            >
+            <p>
+              "Vừa xem cậu sáng nay xong, cậu nhiệt tình, đon đả. Những điều đã
+              diễn ra thì rất đúng."
+            </p>
+            <h4>Viet Duc</h4>
+            <span>Người dùng Tiktok</span>
           </div>
           <div
-            class="testimonial-item text-center"
+            class="testimonial-item"
             data-dot="<img class='img-fluid' src='img/fb-1.png' alt=''>"
           >
-            <h4 class="text-uppercase">trang</h4>
-            <p class="text-primary">Người dùng Tiktok</p>
-            <span class="fs-5"
-              >Lần đầu tiên gặp cậu Bình, cậu nói đến đâu gật lia lịa đến đó. 10
-              điểm không có nhưng</span
-            >
+            <p>
+              "Lần đầu tiên gặp cậu Bình, cậu nói đến đâu gật lia lịa đến đó.
+              Rất dễ nghe và gần gũi."
+            </p>
+            <h4>Trang</h4>
+            <span>Người dùng Tiktok</span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Testimonial End -->
 
+    <!-- Contact CTA Start -->
+    <section id="contact" class="contact-cta">
+      <div class="container">
+        <div class="contact-cta-panel wow fadeInUp" data-wow-delay="0.1s">
+          <div>
+            <p class="section-kicker">Liên hệ</p>
+            <h2>Sẵn sàng đặt lịch hoặc cần hỏi thêm?</h2>
+            <p>
+              Kết nối qua Facebook chính thức để được hướng dẫn cách đặt lịch,
+              chuẩn bị nội dung và xác nhận khung giờ phù hợp.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary rounded-pill px-4 py-3"
+              href="https://www.facebook.com/profile.php?id=61560839484889"
+            >
+              Nhắn Facebook
+            </a>
+            <a
+              class="btn btn-outline-light rounded-pill px-4 py-3"
+              href="https://www.facebook.com/permalink.php?story_fbid=pfbid02EWxWc2pR43pkG94PwbrWHwY7xDKqHKwy5qcmFSja6iei7ceQ29nTr79v8ZNcayHal&id=61560839484889"
+            >
+              Xem hướng dẫn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact CTA End -->
+
     <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn"
+    <footer
+      class="container-fluid footer wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-4 col-md-6">
-            <h4 class="text-uppercase mb-4">Thông tin liên hệ</h4>
-            <div class="d-flex align-items-center mb-2">
-              <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-map-marker-alt text-primary"></span>
-              </div>
-              <span>Phố Nguyễn An Ninh, Trương Định, Hà Nội</span>
-            </div>
-            <div class="d-flex align-items-center mb-2">
-              <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-phone-alt text-primary"></span>
-              </div>
-              <span>0392755954</span>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-envelope-open text-primary"></span>
-              </div>
-              <span>tinhnguyenlinhphong@gmail.com</span>
+            <img class="footer-logo" src="img/logo.png" alt="Tĩnh Nguyên Bảo Sở" />
+            <p class="mt-3">
+              Tĩnh Nguyên Bảo Sở tiếp nhận tư vấn tâm linh, nghi lễ, tài liệu và
+              setup không gian thờ theo lịch hẹn.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4>Thông tin liên hệ</h4>
+            <div class="footer-info">
+              <span><i class="fa fa-map-marker-alt"></i> Phố Nguyễn An Ninh, Trương Định, Hà Nội</span>
+              <span><i class="fa fa-phone-alt"></i> 0392755954</span>
+              <span><i class="fa fa-envelope-open"></i> tinhnguyenlinhphong@gmail.com</span>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <!-- <h4 class="text-uppercase mb-4">Quick Links</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a> -->
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex pt-1 m-n1">
+            <h4>Kết nối</h4>
+            <div class="footer-social">
               <a
-                class="btn btn-lg-square btn-dark text-primary m-1"
+                class="btn btn-lg-square btn-dark text-primary"
                 href="https://www.facebook.com/profile.php?id=61560839484889"
+                aria-label="Facebook"
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a
-                class="btn btn-lg-square btn-dark text-primary m-1"
+                class="btn btn-lg-square btn-dark text-primary"
                 href="https://www.tiktok.com/@tinhnguyenlinhphong"
+                aria-label="Tiktok"
               >
                 <i class="fa-brands fa-tiktok"></i>
               </a>
@@ -645,7 +532,6 @@
               &copy; <a class="border-bottom" href="#">Tĩnh Nguyên Bảo Sở</a>
             </div>
             <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
               Thuộc sở hữu
               <a
                 class="border-bottom"
@@ -656,7 +542,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
     <!-- Back to Top -->
